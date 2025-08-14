@@ -1,4 +1,3 @@
-
 # Binaries
 *.exe
 *.exe~
@@ -24,7 +23,23 @@ node_modules/
 .idea/
 *.swp
 
-# Chain data
-data/
+# Chain runtime
+config/priv_validator_state.json
 config/priv_validator_key.json
 config/node_key.json
+data/
+*.pem
+*.key
+
+# Python venvs
+.env
+.venv
+__pycache__/
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+
+# Ansible
+*.retry
